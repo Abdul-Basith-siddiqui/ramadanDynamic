@@ -80,6 +80,22 @@ app.get('/ramadan/prayers', authenticateToken, (req, res) => {
     prayers: ramadan.prayers,
   });
 });
+
+// 📿 Daily Good Deeds during Ramadan
+app.get('/ramadan/good-deeds', authenticateToken, (req, res) => {
+    res.json({
+      deeds: [
+        "Smile at someone",
+        "Give charity anonymously",
+        "Call a family member",
+        "Help a neighbor",
+        "Read a page of the Quran",
+        "Feed a fasting person",
+        "Make sincere dua for others"
+      ]
+    });
+  });
+  
  
 const PORT = 3000;
 app.listen(PORT, () => {
