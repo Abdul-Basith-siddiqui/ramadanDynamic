@@ -9,11 +9,15 @@ function authenticateToken(req, res, next) {
  
   if (!token) return res.sendStatus(401); // Unauthorized
  
-  jwt.verify(token, SECRET, (err, user) => {
+     jwt.verify(token, SECRET, {
+    issuer: 'myapi.example.com',
+    audience: 'myapi-client' 
+  }, (err, user) => {
     if (err) return res.sendStatus(403); // Forbidden
     req.user = user;
     next();
   });
+  
 }
  
 module.exports = { authenticateToken, SECRET };

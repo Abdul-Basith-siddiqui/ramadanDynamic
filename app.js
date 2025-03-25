@@ -23,7 +23,8 @@ app.post('/login', (req, res) => {
  
   const token = jwt.sign(user, SECRET, {
     expiresIn: '1h',
-    issuer: 'myapi.example.com' // <-- Add issuer here
+    issuer: 'myapi.example.com', // <-- Add issuer here
+     audience: 'myapi-client'
   });
  
   res.json({ token });
