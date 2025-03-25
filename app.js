@@ -123,6 +123,18 @@ app.get('/ramadan/tips', authenticateToken, (req, res) => {
       ]
     });
   });
+
+  // 🙏 Daily Duas for Ramadan
+app.get('/ramadan/dua', authenticateToken, (req, res) => {
+    res.json({
+      duas: [
+        " O Allah, You are Most Forgiving, and You love forgiveness; so forgive me.",
+        "اللهم بلغنا رمضان — O Allah, allow us to reach Ramadan.",
+        "رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ — Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.",
+        "اللهم اجعلني من عتقاء هذا الشهر — O Allah, make me among those freed from the Hellfire this Ramadan."
+      ]
+    });
+  });
   
   
  
