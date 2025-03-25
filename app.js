@@ -109,6 +109,21 @@ app.get('/ramadan/quotes', authenticateToken, (req, res) => {
     });
   });
   
+
+  // ✅ Daily Fasting Tips
+app.get('/ramadan/tips', authenticateToken, (req, res) => {
+    res.json({
+      tips: [
+        "Stay hydrated between Iftar and Suhoor by drinking plenty of water.",
+        "Avoid overeating during Iftar to maintain energy levels.",
+        "Include fruits and dates to replenish energy quickly.",
+        "Get enough sleep to help your body rest and recover.",
+        "Make time for daily Quran recitation and reflection.",
+        "Break your fast with dates and water, following the Sunnah."
+      ]
+    });
+  });
+  
   
  
 const PORT = 3000;
