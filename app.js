@@ -137,18 +137,18 @@ app.get('/ramadan/dua', authenticateToken, (req, res) => {
   });
   
   // 🌠 Random Ramadan Quote
-app.get('/ramadan/quotes/random', authenticateToken, (req, res) => {
-    const quotes = [
-      "Ramadan is the month whose beginning is mercy, whose middle is forgiveness and whose end is freedom from fire.",
-      "When the month of Ramadan starts, the gates of the heaven are opened and the gates of Hell are closed.",
-      "Fasting is a shield with which a servant protects himself from the fire.",
-      "Whoever fasts Ramadan out of faith and in the hope of reward will be forgiven his previous sins.",
-      "Ramadan is not just about fasting from food, it's about feeding the soul with goodness.",
-      "Let your kindness during Ramadan flow like a river—endless and full of life."
-    ];
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    res.json({ quote: randomQuote });
-  });
+// app.get('/ramadan/quotes/random', authenticateToken, (req, res) => {
+//     const quotes = [
+//       "Ramadan is the month whose beginning is mercy, whose middle is forgiveness and whose end is freedom from fire.",
+//       "When the month of Ramadan starts, the gates of the heaven are opened and the gates of Hell are closed.",
+//       "Fasting is a shield with which a servant protects himself from the fire.",
+//       "Whoever fasts Ramadan out of faith and in the hope of reward will be forgiven his previous sins.",
+//       "Ramadan is not just about fasting from food, it's about feeding the soul with goodness.",
+//       "Let your kindness during Ramadan flow like a river—endless and full of life."
+//     ];
+//     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+//     res.json({ quote: randomQuote });
+//   });
   
   
  
