@@ -95,6 +95,20 @@ app.get('/ramadan/good-deeds', authenticateToken, (req, res) => {
       ]
     });
   });
+
+  // 🌙 Inspirational Quotes for Ramadan
+app.get('/ramadan/quotes', authenticateToken, (req, res) => {
+    res.json({
+      quotes: [
+        "Ramadan is the month whose beginning is mercy, whose middle is forgiveness and whose end is freedom from fire.",
+        "When the month of Ramadan starts, the gates of the heaven are opened and the gates of Hell are closed.",
+        "Fasting is a shield with which a servant protects himself from the fire.",
+        "Whoever fasts Ramadan out of faith and in the hope of reward will be forgiven his previous sins.",
+        "Ramadan is a time to empty your stomach to feed your soul."
+      ]
+    });
+  });
+  
   
  
 const PORT = 3000;
