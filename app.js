@@ -173,16 +173,16 @@ app.get('/ramadan/history', authenticateToken, (req, res) => {
   });
   
   // 💰 Info about Zakat al-Fitr
-app.get('/ramadan/zakat', authenticateToken, (req, res) => {
-    res.json({
-      zakat: {
-        purpose: "Zakat al-Fitr is a mandatory charity given by Muslims at the end of Ramadan to purify their fast and help those in need.",
-        amount: "The amount is typically the cost of one meal per person in your household.",
-        deadline: "Must be paid before the Eid prayer.",
-        recipients: "Poor and needy individuals within your community."
-      }
-    });
-  });
+// app.get('/ramadan/zakat', authenticateToken, (req, res) => {
+//     res.json({
+//       zakat: {
+//         purpose: "Zakat al-Fitr is a mandatory charity given by Muslims at the end of Ramadan to purify their fast and help those in need.",
+//         amount: "The amount is typically the cost of one meal per person in your household.",
+//         deadline: "Must be paid before the Eid prayer.",
+//         recipients: "Poor and needy individuals within your community."
+//       }
+//     });
+//   });
 
   
  
