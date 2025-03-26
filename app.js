@@ -150,7 +150,19 @@ app.get('/ramadan/dua', authenticateToken, (req, res) => {
 //     res.json({ quote: randomQuote });
 //   });
   
-  
+app.get('/ramadan/calendar', authenticateToken, (req, res) => {
+    res.json({
+      calendar: [
+        { day: 1, event: "Start of Ramadan" },
+        { day: 17, event: "Battle of Badr (historical)" },
+        { day: 19, event: "Beginning of the last 10 nights" },
+        { day: 21, event: "Possibility of Laylat al-Qadr" },
+        { day: 27, event: "Commonly observed Laylat al-Qadr" },
+        { day: 29, event: "End of Ramadan (depending on moon sighting)" },
+        { day: 30, event: "Eid al-Fitr (if 30 days complete)" }
+      ]
+    });
+  });
  
 const PORT = 3000;
 app.listen(PORT, () => {
