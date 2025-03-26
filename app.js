@@ -163,6 +163,15 @@ app.get('/ramadan/calendar', authenticateToken, (req, res) => {
       ]
     });
   });
+
+  // 📜 Historical Background of Ramadan
+app.get('/ramadan/history', authenticateToken, (req, res) => {
+    res.json({
+      history:
+        "Ramadan is the ninth month of the Islamic calendar. It was during this month that the Quran was first revealed to the Prophet Muhammad (peace be upon him). Muslims have observed fasting during this month for centuries, following the commandment from Allah to seek Taqwa (God-consciousness)."
+    });
+  });
+  
  
 const PORT = 3000;
 app.listen(PORT, () => {
