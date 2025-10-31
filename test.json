@@ -1,0 +1,512 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Captured API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/orgs/my": {
+      "get": {
+        "summary": "GET /api/v1/orgs/my",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/v1/org-users/get_users_orgs": {
+      "get": {
+        "summary": "GET /api/v1/org-users/get_users_orgs",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/v1/users/post-login": {
+      "post": {
+        "summary": "POST /api/v1/users/post-login",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "content-length",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Captured response",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/v1/ai-agent/home/chats": {
+      "get": {
+        "summary": "GET /api/v1/ai-agent/home/chats",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "10"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "Access-Control-Allow-Origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "Test, Fix, and Retest security and quality issues ...",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T12:55:54.146Z",
+                    "updated_on": "2025-10-30T12:55:54.146Z",
+                    "createdAt": "2025-10-30T12:55:54.147Z",
+                    "updatedAt": "2025-10-30T12:55:54.147Z",
+                    "__v": 0
+                  },
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "petstore.swagger.io",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T11:41:02.701Z",
+                    "updated_on": "2025-10-30T11:41:02.701Z",
+                    "createdAt": "2025-10-30T11:41:02.702Z",
+                    "updatedAt": "2025-10-30T11:41:02.702Z",
+                    "__v": 0
+                  },
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "https://example.com",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T11:28:45.275Z",
+                    "updated_on": "2025-10-30T11:28:45.275Z",
+                    "createdAt": "2025-10-30T11:28:45.276Z",
+                    "updatedAt": "2025-10-30T11:28:45.276Z",
+                    "__v": 0
+                  },
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "show insights",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T11:06:27.168Z",
+                    "updated_on": "2025-10-30T11:06:27.168Z",
+                    "createdAt": "2025-10-30T11:06:27.168Z",
+                    "updatedAt": "2025-10-30T11:06:27.168Z",
+                    "__v": 0
+                  },
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "discover",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T11:05:42.566Z",
+                    "updated_on": "2025-10-30T11:05:42.566Z",
+                    "createdAt": "2025-10-30T11:05:42.566Z",
+                    "updatedAt": "2025-10-30T11:05:42.566Z",
+                    "__v": 0
+                  },
+                  {
+                    "_id": "<redacted>",
+                    "user_id": "<redacted>",
+                    "org_id": "<redacted>",
+                    "chat_type": "HOME",
+                    "title": "https://example.com",
+                    "status": "ACTIVE",
+                    "execution_state": "IDLE",
+                    "created_on": "2025-10-30T11:05:08.729Z",
+                    "updated_on": "2025-10-30T11:05:08.729Z",
+                    "createdAt": "2025-10-30T11:05:08.729Z",
+                    "updatedAt": "2025-10-30T11:05:08.729Z",
+                    "__v": 0
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/api-catalog/apps/all": {
+      "get": {
+        "summary": "GET /api/v1/api-catalog/apps/all",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "6"
+          },
+          {
+            "name": "sortOrder",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "DESC"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "Access-Control-Allow-Origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {
+              "<redacted>": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "{\"data\":[{\"_id\":\"<redacted>\",\"openapi_spec\":\"https://example.com\",\"org_id\":\"<redacted>\",\"created_on\":\"2025-10-30T12:57:54.105Z\",\"<redacted>\":\"abdul-basith@perfai.ai\",\"isGatewayApi\":false,\"accessLevel\":\"Private\",\"<redacted>\":\"<redacted>\",\"<redacted>\":0,\"total_pii\":0,\"<redacted>\":{\"total_issues\":0,\"<redacted>\":0,\"total_critical\":0,\"total_high\":0,\"total_medium\":0},\"design_app_id\":\"<redacted>\",\"design_summary\":{\"total_issues\":0,\"total_critical\":0,\"total_high\":0,\"total_medium\":0},\"version_app_id\":\"<r"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/api-catalog/apps": {
+      "get": {
+        "summary": "GET /api/v1/api-catalog/apps",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "690360d28678d5df656afd0f"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "_id": "<redacted>",
+                  "openapi_spec": "https://example.com",
+                  "base_path": "",
+                  "auth": null,
+                  "expired_auth": [],
+                  "non_owner_auth": null,
+                  "non_entitled_auth": null,
+                  "headers": [],
+                  "org_id": "<redacted>",
+                  "created_on": "2025-10-30T12:57:54.105Z",
+                  "created_by": "<redacted>",
+                  "created_by_email": "abdul-basith@perfai.ai",
+                  "governance_email": "abdul-basith@perfai.ai",
+                  "modified_by": "<redacted>",
+                  "modified_by_email": "abdul-basith@perfai.ai",
+                  "modified_on": "2025-10-30T12:57:54.105Z",
+                  "isGatewayApi": false,
+                  "dsr": false,
+                  "midnight_run": false,
+                  "scheduleType": "nightly",
+                  "excludedServices": [],
+                  "runnerType": "PRIVACY",
+                  "rbac_auths": [],
+                  "tenant_one_auths": [],
+                  "tenant_two_auths": [],
+                  "registrationStatus": "IN_PROGRESS",
+                  "rateLimitRPS": 180,
+                  "skipAutoRuns": false,
+                  "environment": "Staging",
+                  "accessLevel": "Private",
+                  "category": null,
+                  "__v": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ai-agent/registration/chats/{uuid}": {
+      "get": {
+        "summary": "GET /api/v1/ai-agent/registration/chats/{uuid}",
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          },
+          {
+            "name": "Access-Control-Allow-Origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "https://app.perfai.ai"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "<redacted>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "type": "human",
+                    "message": "Test, Fix, and Retest security and quality issues in my app: example.com"
+                  },
+                  {
+                    "type": "ai",
+                    "message": "Starting app configuration...\nValidating URL: https://example.com...\nSearching for app documentation (Swagger/OpenAPI)\nFailed to discover OAS from base path.\nSearching for app documentation (Swagger/OpenAPI) in subdomains...\nCreating app in the catalog...\n**Task 1/3: Failed to validate app documentation.**\n\nHmm, the OAS URL seems invalid or unreachable. Please check the link and try again.. You can provide a valid URL in App Edit page.\nSetting up test accounts...\n**Task 2/3: Signing-up test accounts**\n\n\nFailed to sign-up in app\nYou can manually add them now or later in **App Test Mode**.\n**Task 3/3: Failed to create test accounts**\n\nNo worries, you can add test accounts here or later in the App Test Mode.\n**Configuration completed with 1 error.** Ready to start the onboarding process? (Note: Some tests may not run due to missing configuration.)\n"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.perfai.ai"
+    }
+  ]
+}
