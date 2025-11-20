@@ -1,0 +1,220 @@
+{
+"basePath": "",
+"components": {
+"securitySchemes": {}
+},
+"info": {
+"description": "Auto-generated from captured requests and discovered APIs",
+"title": "13.93.178.214:32019/web/login",
+"version": "1.0.0",
+"x-generated-at": "2025-11-20T07:38:30Z"
+},
+"openapi": "3.0.3",
+"paths": {
+"/base_setup/data": {
+"post": {
+"operationId": "post_base_setup_data",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/base_setup/demo_active": {
+"post": {
+"operationId": "post_base_setup_demo_active",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/action/load": {
+"post": {
+"operationId": "post_web_action_load",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/dataset/call_kw/ir.module.module/get_views": {
+"post": {
+"operationId": "post_web_dataset_call_kw_ir.module.module_get_views",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/dataset/call_kw/ir.module.module/search_panel_select_range": {
+"post": {
+"operationId": "post_web_dataset_call_kw_ir.module.module_search_panel_select_range",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/dataset/call_kw/ir.module.module/web_search_read": {
+"post": {
+"operationId": "post_web_dataset_call_kw_ir.module.module_web_search_read",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/dataset/call_kw/res.config.settings/get_views": {
+"post": {
+"operationId": "post_web_dataset_call_kw_res.config.settings_get_views",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/dataset/call_kw/res.config.settings/onchange": {
+"post": {
+"operationId": "post_web_dataset_call_kw_res.config.settings_onchange",
+"parameters": [],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+},
+"/web/image": {
+"get": {
+"operationId": "get_web_image",
+"parameters": [
+{
+"description": "The field query parameter",
+"in": "query",
+"name": "field",
+"required": false,
+"schema": {
+"type": "string"
+}
+},
+{
+"description": "The id query parameter",
+"in": "query",
+"name": "id",
+"required": false,
+"schema": {
+"type": "string"
+}
+},
+{
+"description": "The model query parameter",
+"in": "query",
+"name": "model",
+"required": false,
+"schema": {
+"type": "string"
+}
+}
+],
+"responses": {
+"200": {
+"content": {
+"application/json": {
+"schema": {
+"type": "object"
+}
+}
+},
+"description": "OK"
+}
+},
+"summary": "Observed endpoint"
+}
+}
+},
+"servers": [
+{
+"description": "API server",
+"url": "http://13.93.178.214:32019"
+}
+]
+}
